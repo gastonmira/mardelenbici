@@ -1,0 +1,44 @@
+/* ==========================================================================
+   mardelenbici custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 50px;
+}
+
+html,body{
+height:100%;
+}
+
+.containerMain
+{
+    /*Quitar los paddings que vienen por defecto en BT3*/
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.initialMap
+{
+    /*Hack para el alto del mapa (es dinamico mediante el script en main.js)*/
+    height:1000px;
+}
+
+span.caret{
+ /*Ocultar la flecha del icono del dropdown en la navbar*/
+ display:none;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    /*Simular en el menu, las barras de la municipalidad*/
+    background-color: #aaddff;
+}
+
+
+
+
+
+
+
+
+
