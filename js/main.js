@@ -3,6 +3,8 @@ $(document).ready(function(){
     $(window).resize(function(){
         $("#map").height((window.innerHeight - 50));
     });
+
+    
 });
 
 

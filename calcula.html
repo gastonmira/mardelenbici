@@ -13,8 +13,10 @@
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/jquery-ui.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <style>
 
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -55,17 +57,54 @@
 </nav>
 
     <div class="container-fluid containerMain">
-          <div id="map" class="initialMap"></div>
+    <div class="container" style="font-size:18px;">
+        <br/>
+        <div class="row">
+            <div class="col-xs-4">
+                <span>¿En que viajas?</span>
+            </div>
+            <div class="col-xs-8">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-mobility btn-primary active" value="cole">
+                    <input type="radio" class="radMobility" name="options" id="option1" checked> Colectivo
+                  </label>
+                  <label class="btn btn-mobility btn-primary" value="taxi">
+                    <input type="radio" class="radMobility" name="options" id="option2"> Taxi
+                  </label>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-4">
+                <span id="txtAsk">¿Cuantos colectivos tomas por dia?</span>
+            </div>
+            <div class="col-xs-8">
+                <input type="number" id="txtCantidad" class="form-control">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12">
+                <a id="btnMakeCalculo" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-usd"></span>&nbsp;Calcular</a>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 id="txtCalculo">Ahorro por mes: $</h3>
+            </div>
+        </div>
+    </div>
     </div> <!-- /container -->        
        
-        <!-- JQUERY + UI + BOOTSTRAP.JS -->
+        <!-- JQUERY + BOOTSTRAP.JS -->
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         
         <!-- JS MAP RENDER -->
-        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/calcula.js"></script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
